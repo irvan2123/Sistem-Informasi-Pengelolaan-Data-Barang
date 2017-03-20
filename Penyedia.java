@@ -22,9 +22,9 @@ public class Penyedia {
     }
     
     public void tambahBarang (Barang b) {
-        while (this.getJumlahBarang() < this.getDaftarBarang().length) {
-            getDaftarBarang()[getJumlahBarang()] = b;
-            this.setJumlahBarang(this.getJumlahBarang() + 1);
+        while (this.jumlahBarang < this.daftarBarang.length) {
+            daftarBarang[jumlahBarang] = b;
+            this.jumlahBarang = jumlahBarang + 1;
         }
     }
 
