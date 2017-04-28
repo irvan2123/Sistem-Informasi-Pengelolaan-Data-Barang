@@ -12,10 +12,10 @@ package Kelas;
 public class Barang {
 
     private String namaBarang;
-    private double harga;
+    private int harga;
     private int jumlahBarang;
 
-    public Barang(String namaBarang, double harga, int jumlahBarang) {
+    public Barang(String namaBarang, int harga, int jumlahBarang) {
         this.namaBarang = namaBarang;
         this.jumlahBarang = jumlahBarang;
         this.harga = harga;
@@ -29,11 +29,11 @@ public class Barang {
         this.namaBarang = namaBarang;
     }
 
-    public double getHarga() {
+    public int getHarga() {
         return harga;
     }
 
-    public void setHarga(double harga) {
+    public void setHarga(int harga) {
         this.harga = harga;
     }
 

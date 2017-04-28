@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GUI;
+package View;
 
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -244,8 +244,4 @@ public class Petugas extends javax.swing.JFrame {
     private javax.swing.JTextField tfumur;
     private javax.swing.JLabel umur;
     // End of variables declaration//GEN-END:variables
-
-    String getIDPetugas() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

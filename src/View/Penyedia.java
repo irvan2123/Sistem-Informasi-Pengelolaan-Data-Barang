@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GUI;
+package View;
 
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -30,12 +30,12 @@ public class Penyedia extends javax.swing.JFrame {
         return tfNamaBarang.getText();
     }
     
-    public double getHargaBarang(){
-        return tfHarga.getText();
+    public int getHargaBarang(){
+        return (Integer.parseInt(tfHarga.getText()));
     }
     
     public int getJumlahBarang(){
-        return tfJumlahBarang.getText();
+        return (Integer.parseInt(tfJumlahBarang.getText()));
     }
     
     public String getGudang(){

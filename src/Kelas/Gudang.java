@@ -14,6 +14,7 @@ public class Gudang {
     private String namapetugas;
     private String alamat;
     private int jumlahBarang;
+    private Petugas[] daftarPetugas = new Petugas[3];
    
 
     public Gudang(String namapetugas, String alamat, int maxJumBarang) {
@@ -60,4 +61,15 @@ public class Gudang {
         }
         jumlahBarang = jumlahBarang-1;
     }
+    
+    public Petugas getDaftarPetugas (int j){
+        
+        for (int i=0;i<daftarPetugas.length;i++){
+            if (i == j){
+                return daftarPetugas[j];
+            }       
+        }
+        return null;
+    }
 }
+

@@ -16,6 +16,7 @@ public class Petugas extends Orang {
     private int jumlahBarang;
     private String gudang;
     
+    
     public Petugas(String nama, int umur, String alamat,String IDPetugas, int maxJumBarang) {
         super(nama,umur,alamat);
         IDPetugas = "Petugas- "+(id++);
@@ -44,4 +45,5 @@ public class Petugas extends Orang {
         }
         jumlahBarang = jumlahBarang-1;
     } 
+
 }
