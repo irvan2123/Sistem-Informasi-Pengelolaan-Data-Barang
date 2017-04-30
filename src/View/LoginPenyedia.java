@@ -5,6 +5,7 @@
  */
 package View;
 
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -32,6 +33,12 @@ public class LoginPenyedia extends javax.swing.JFrame {
     
     public JButton getBtnOk(){
         return jbok;
+    }
+    
+    public void addActionListener(ActionListener ae){
+        jbok.addActionListener(ae);
+        tfusername.addActionListener(ae);
+        pfpassword.addActionListener(ae);
     }
     /**
      * This method is called from within the constructor to initialize the form.

@@ -5,6 +5,7 @@
  */
 package View;
 
+import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -32,6 +33,12 @@ public class LoginPetugas extends javax.swing.JFrame {
     
     public JButton getBtnOk(){
         return jbOK;
+    }
+    
+     public void addActionListener(ActionListener ae){
+        jbOK.addActionListener(ae);
+        tfUsername.addActionListener(ae);
+        pfPassword.addActionListener(ae);
     }
     /**
      * This method is called from within the constructor to initialize the form.

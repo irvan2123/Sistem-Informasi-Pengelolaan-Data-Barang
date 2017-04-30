@@ -5,6 +5,7 @@
  */
 package Controller;
 
+import Kelas.Aplikasi;
 import View.LoginPenyedia;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,13 +15,13 @@ import java.awt.event.ActionListener;
  * @author IRFAN
  */
 public class ControllerLoginPenyedia implements ActionListener{
-    private aplikasi app;
+    private Aplikasi app;
     private LoginPenyedia view;
 
     public ControllerLoginPenyedia(){
         view = new LoginPenyedia();
         view.setVisible(true);
-        view.addListener(this);
+        view.addActionListener(this);
     }
     
     
@@ -31,6 +32,5 @@ public class ControllerLoginPenyedia implements ActionListener{
             ControllerMenu cm = new ControllerMenu();
             view.dispose();
         }
-        }
-    
+    }    
 }

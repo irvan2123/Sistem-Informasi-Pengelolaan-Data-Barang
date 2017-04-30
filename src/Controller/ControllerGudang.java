@@ -25,7 +25,6 @@ public class ControllerGudang extends MouseAdapter implements ActionListener {
         daftarBarang = new ArrayList();
         view = new Gudang();
         view.addActionListener(this);
-        view.addMouseListener(this);
         view.setVisible(true);
     }
 
@@ -43,7 +42,7 @@ public class ControllerGudang extends MouseAdapter implements ActionListener {
             int i = view.getSelectedBarang();
             daftarBarang.remove(i);
             view.resetView();;
-            view.setId(Peserta.getId());
+            view.setId(getId());
             view.
             view.setDaftarPetugas(getDaftarPetugas());
             }

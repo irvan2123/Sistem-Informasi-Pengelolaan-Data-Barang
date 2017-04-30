@@ -62,11 +62,11 @@ public class Gudang {
         jumlahBarang = jumlahBarang-1;
     }
     
-    public Petugas getDaftarPetugas (int j){
+    public Petugas getDaftarPetugas (int index){
         
         for (int i=0;i<daftarPetugas.length;i++){
-            if (i == j){
-                return daftarPetugas[j];
+            if (i == index){
+                return daftarPetugas[index];
             }       
         }
         return null;
