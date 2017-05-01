@@ -11,11 +11,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import View.Menu;
+import javax.swing.JOptionPane;
 /**
  *
  * @author IRFAN
  */
-    public class ControllerMenu extends MouseAdapter implements ActionListener {
+public class ControllerMenu extends MouseAdapter implements ActionListener {
         private Menu view;
         
         public ControllerMenu(){
@@ -36,7 +37,9 @@ import View.Menu;
             } else if (source.equals(view.getBtnViewGudang())){
                 ControllerGudang cg = new ControllerGudang();
                 view.dispose();
-            }
-            
+            } else if (source.equals(view.getBtnClose())) { // Jadi kalau misalnya kita klik CLOSE , harusnya yang keluar thank you dan aplikasinya tertutup.
+            JOptionPane.showMessageDialog(null, "Thank you");
+            System.exit(0);
+        }
         }
     }

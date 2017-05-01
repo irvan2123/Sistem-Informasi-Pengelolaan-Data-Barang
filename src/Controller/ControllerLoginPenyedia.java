@@ -9,6 +9,7 @@ import Kelas.Aplikasi;
 import View.LoginPenyedia;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -26,11 +27,19 @@ public class ControllerLoginPenyedia implements ActionListener{
     
     
     @Override
-    public void actionPerformed(ActionEvent e) {
-        Object source = e.getSource();
+    public void actionPerformed(ActionEvent ae) {
+        Object source = ae.getSource();
         if (source.equals(view.getBtnOk())) {
-            ControllerMenu cm = new ControllerMenu();
-            view.dispose();
+            try {
+                if(view.getUsername() == view.getUsername()){
+                    if(view.getPassword() == view.getPassword()){
+                        ControllerMenu cm = new ControllerMenu();
+                        view.dispose();
+                    }
+                }
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(view, "Salah username atau Password");
+            }
         }
-    }    
+    }
 }

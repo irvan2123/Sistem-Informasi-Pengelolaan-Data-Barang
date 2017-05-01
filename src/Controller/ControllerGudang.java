@@ -5,6 +5,8 @@
  */
 package Controller;
 
+import Database.Database;
+import Kelas.Aplikasi;
 import View.Petugas;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,8 +21,10 @@ import View.Gudang;
  */
 public class ControllerGudang extends MouseAdapter implements ActionListener {
     private ArrayList<Petugas> daftarBarang;
+    private Aplikasi app;
     private Gudang view;
-    
+    private boolean bo; 
+    private Database db;
     public ControllerGudang(){
         daftarBarang = new ArrayList();
         view = new Gudang();
@@ -37,19 +41,20 @@ public class ControllerGudang extends MouseAdapter implements ActionListener {
         if(source.equals(view.getBtnBack())){
             ControllerMenu cm = new ControllerMenu();
             view.dispose();
-    } else {
-            if(source.equals(view.getBtnRemove())){
-            int i = view.getSelectedBarang();
-            daftarBarang.remove(i);
-            view.resetView();;
-            view.setId(getId());
-            view.
-            view.setDaftarPetugas(getDaftarPetugas());
+    } else if(source.equals(view.getBtnRemove())) {
+        if(bo == true){
+            if("1".equals(view.getGudang())){
+                int j = view.getSelectedBarang();
+                db.deleteGudang(app.daftarGudang().get(j));
+                app.daftarGudang().remove(j);
+                view.resetView();
+                view.setDaftarBarang(getDaftarBarang());
             }
         }
-    public void mousePressed(MouseEvent me){
-        Object source = me.getSource();
-      
         }
     }
-}
+    public void mousePressed(MouseEvent me){
+        Object source = me.getSource();
+        
+        }
+    }

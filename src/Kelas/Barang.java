@@ -11,6 +11,7 @@ package Kelas;
  */
 public class Barang {
 
+    private String IDBarang;
     private String namaBarang;
     private int harga;
     private int jumlahBarang;
@@ -44,4 +45,14 @@ public class Barang {
     public void setJumlahBarang(int jumlahBarang) {
         this.jumlahBarang = jumlahBarang;
     }
+
+    public String getIDBarang() {
+        return IDBarang;
+    }
+
+    public void setIDBarang(String IDBarang) {
+        this.IDBarang = IDBarang;
+    }
+    
+    
 }

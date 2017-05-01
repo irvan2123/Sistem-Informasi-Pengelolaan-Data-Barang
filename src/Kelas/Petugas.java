@@ -45,5 +45,4 @@ public class Petugas extends Orang {
         }
         jumlahBarang = jumlahBarang-1;
     } 
-
 }

@@ -15,6 +15,7 @@ public class Gudang {
     private String alamat;
     private int jumlahBarang;
     private Petugas[] daftarPetugas = new Petugas[3];
+    private String IDGudang;
    
 
     public Gudang(String namapetugas, String alamat, int maxJumBarang) {
@@ -71,5 +72,12 @@ public class Gudang {
         }
         return null;
     }
-}
 
+    public String getIDGudang() {
+        return IDGudang;
+    }
+
+    public void setIDGudang(String IDGudang) {
+        this.IDGudang = IDGudang;
+    }
+}

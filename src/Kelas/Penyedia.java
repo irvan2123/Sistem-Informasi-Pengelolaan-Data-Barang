@@ -12,6 +12,7 @@ package Kelas;
 public class Penyedia extends Orang{
     Barang[] daftarBarang = new Barang[50]; //asumsi barang yang tersedia ada 50
     private int jumlahBarang;
+    private String IDPenyedia;
     
     public Penyedia (String nama, int umur, String alamat, int maxJumBarang , int jumlahBarang) {
         super(nama,umur,alamat);
@@ -40,6 +41,12 @@ public class Penyedia extends Orang{
     public void setJumlahBarang(int jumlahBarang) {
         this.jumlahBarang = jumlahBarang;
     }
-    
-    
+
+    public String getIDPenyedia() {
+        return IDPenyedia;
+    }
+
+    public void setIDPenyedia(String IDPenyedia) {
+        this.IDPenyedia = IDPenyedia;
+    }
 }

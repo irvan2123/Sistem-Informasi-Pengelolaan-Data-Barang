@@ -43,6 +43,4 @@ public class Orang {
     public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
-    
-    
 }
